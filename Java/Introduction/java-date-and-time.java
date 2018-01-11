@@ -8,7 +8,10 @@ class Solution5 {
         int yy = Integer.parseInt(year);
 
         LocalDate l = LocalDate.of(yy, mm, dd);
-        System.out.println(l.getDayOfWeek());
+
+        String res = l.getDayOfWeek().toString();
+
+        return res;
     }
 
     public static void main(String[] args) {
